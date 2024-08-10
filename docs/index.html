@@ -2,6 +2,15 @@
 <html lang="en" class="h-100">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RB1FK8CZG9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RB1FK8CZG9');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -66,7 +75,8 @@
                 <br>
                 <br>
                 <p class="text-center">Figure 1: <em>Flow diagram of the proposed end-to-end analysis-by-synthesis
-                        experiment. </em></p>
+                        experiment. S(z) is the speech, G(z) is the harmonic oscillator, C(z) is the noise filter, and
+                        H(z) is the vocal tract filter. </em></p>
             </div>
         </div>
 
@@ -78,15 +88,14 @@
             <div class="section mb-5">
                 <p>
                     This section contains the listening samples from the VCTK Corpus used for subjective evaluation in
-                    the paper.
-                    Reference is the ground truth audio, and the other columns are the copy-synthesis speech using the
-                    same clip with different models, which are the traditional linear predictive coding (<b>LPC</b>),
-                    the neural homomorphic vocoder (<b>NHV</b>), the differentiable WORLD vocoder (<b>&#9661World</b>),
-                    and the proposed source-filter GOLF vocoder (<b>GOLF</b>).
+                    the paper. Reference is the ground truth audio, and the other columns are the copy-synthesis speech
+                    using the same clip with different models, which are the traditional linear predictive coding
+                    (<b>LPC</b>), the neural homomorphic vocoder (<b>NHV</b>), the differentiable WORLD vocoder
+                    (<b>&#9661World</b>), and the proposed source-filter GOLF vocoder (<b>GOLF</b>).
                 </p>
             </div>
 
-
+            <h3 class="text-center">p361</h3>
 
             <table class="table table-sm text-center" style="vertical-align: middle;">
                 <tr>
@@ -99,135 +108,373 @@
                 </tr>
 
                 <tr>
-                    <td class="passage">Clip 1
+                    <td class="passage">p361_004 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/gt_p361_004.wav" type="audio/wav">
+
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/gt_f1_1.wav" type="audio/wav">
+                            <source src="audio/female/sample-1/pysptk_p361_004.wav" type="audio/wav">
+
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/nhv_p361_004.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/world_p361_004.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/golf_p361_004.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="passage">p361_006 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-2/gt_p361_006.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-2/pysptk_p361_006.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/ddsp_f1_1.wav" type="audio/wav">
+                            <source src="audio/female/sample-2/nhv_p361_006.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/sawsing_f1_1.wav" type="audio/wav">
+                            <source src="audio/female/sample-2/world_p361_006.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/pulse_f1_1.wav" type="audio/wav">
+                            <source src="audio/female/sample-2/golf_p361_006.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p361_008 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/gt_p361_008.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/glottal_d_f1_1.wav" type="audio/wav">
+                            <source src="audio/female/sample-3/pysptk_p361_008.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/nhv_p361_008.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/world_p361_008.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/golf_p361_008.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="passage">Clip 2
-                    </td>
+                    <td class="passage">p361_011 </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/gt_f1_2.wav" type="audio/wav">
+                            <source src="audio/female/sample-4/gt_p361_011.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/ddsp_f1_2.wav" type="audio/wav">
+                            <source src="audio/female/sample-4/pysptk_p361_011.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/sawsing_f1_2.wav" type="audio/wav">
+                            <source src="audio/female/sample-4/nhv_p361_011.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/pulse_f1_2.wav" type="audio/wav">
+                            <source src="audio/female/sample-4/world_p361_011.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/glottal_d_f1_2.wav" type="audio/wav">
+                            <source src="audio/female/sample-4/golf_p361_011.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                 </tr>
-
 
                 <tr>
-                    <td class="passage">Clip 3
-                    </td>
+                    <td class="passage">p361_024 </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/gt_f1_3.wav" type="audio/wav">
+                            <source src="audio/female/sample-5/gt_p361_024.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/ddsp_f1_3.wav" type="audio/wav">
+                            <source src="audio/female/sample-5/pysptk_p361_024.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/sawsing_f1_3.wav" type="audio/wav">
+                            <source src="audio/female/sample-5/nhv_p361_024.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/pulse_f1_3.wav" type="audio/wav">
+                            <source src="audio/female/sample-5/world_p361_024.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                     <td>
                         <audio controls="controls" class="player" preload="metadata">
-                            <source src="audio/glottal_d_f1_3.wav" type="audio/wav">
+                            <source src="audio/female/sample-5/golf_p361_024.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+            </table>
+
+            <h3 class="text-center">p360</h3>
+
+            <table class="table table-sm text-center" style="vertical-align: middle;">
+                <tr>
+                    <th>Test clip</th>
+                    <th><span>Reference</span></th>
+                    <th><span class="anchor">LPC</span></th>
+                    <th><span class="nhv">NHV</span></th>
+                    <th><span class="world">&#9661World</span></th>
+                    <th><span class="golf">GOLF</span></th>
+                </tr>
+
+                <tr>
+                    <td class="passage">p360_003 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/gt_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/pysptk_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/nhv_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/world_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/golf_p360_003.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
                 </tr>
 
+                <tr>
+                    <td class="passage">p360_005 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/gt_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/pysptk_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/nhv_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/world_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/golf_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="passage">p360_007 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/gt_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/pysptk_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/nhv_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/world_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/golf_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="passage">p360_009 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/gt_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/pysptk_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/nhv_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/world_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/golf_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="passage">p360_019 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/gt_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/pysptk_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/nhv_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/world_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/golf_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
 
             </table>
+
 
 
         </div>
 
         <div class="section">
-            <div class="abstract">
-                <h2 class="text-center">Additional Materials</h2>
-            </div>
-
-
+            <h2 class="text-center">GOLF variants</h2>
+            <hr>
         </div>
+
 
         <div class="section">
             <h2 class="text-center">Citation</h2>
             <hr>
             <div style="background-color: #e9ecef;">
                 <pre><code>
-@inproceedings{ycy2023golf,
-    title={Singing Voice Synthesis Using Differentiable LPC and Glottal-Flow-Inspired Wavetables},
+@inproceedings{ycy2024golf,
+    title={Differentiable Time-Varying Linear Prediction in the Context of End-to-End Analysis-by-Synthesis},
     author={Chin-Yun Yu and Gy{\"o}rgy Fazekas},
-    booktitle={International Society for Music Information Retrieval (ISMIR)},
-    year={2023}
+    booktitle={INTERSPEECH},
+    year={2024}
 }
   </code></pre>
             </div>
@@ -254,5 +501,21 @@
         crossorigin="anonymous"></script>
     <script src="js/slider.js"></script>
 </body>
+<script>
+    // Select all audio elements with the class 'audio-player'
+    const audios = document.querySelectorAll('audio');
+    let currentAudio = null;
+
+    audios.forEach(audio => {
+        audio.addEventListener('play', () => {
+            // Pause the currently playing audio if it's different from the new one
+            if (currentAudio && currentAudio !== audio) {
+                currentAudio.pause();
+            }
+            // Update the currently playing audio
+            currentAudio = audio;
+        });
+    });
+</script>
 
 </html>
