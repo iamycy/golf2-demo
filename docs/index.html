@@ -462,6 +462,351 @@
         <div class="section">
             <h2 class="text-center">GOLF variants</h2>
             <hr>
+            <div class="section mb-5">
+                <p>
+                    This section compares the following variants of the GOLF synthesiser: the original GOLF
+                    (<b>GOLF-v1</b>), the source-filter GOLF trained with frame-wise LPC and synthesise with frame-wise
+                    (<b>GOLF-ff</b>) or sample-wise (<b>GOLF-fs</b>) LPC, and the proposed source-filter GOLF with
+                    sample-wise LPC both used in training and evaluation (<b>GOLF-ss</b>).
+                </p>
+            </div>
+
+
+            <table class="table table-sm text-center" style="vertical-align: middle;">
+                <tr>
+                    <th>Test clip</th>
+                    <th><span>Reference</span></th>
+                    <th><span class="golf-v1">GOLF-v1</span></th>
+                    <th><span class="golf-ff">GOLF-ff</span></th>
+                    <th><span class="golf-fs">GOLF-fs</span></th>
+                    <th><span class="golf-ss">GOLF-ss</span></th>
+                </tr>
+
+                <tr>
+                    <td class="passage">p361_004 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/gt_p361_004.wav" type="audio/wav">
+
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/golf-v1_p361_004.wav" type="audio/wav">
+
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/golf-frame_p361_004.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/golf-frame-eval-sample_p361_004.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-1/golf_p361_004.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="passage">p361_006 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-2/gt_p361_006.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-2/golf-v1_p361_006.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-2/golf-frame_p361_006.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-2/golf-frame-eval-sample_p361_006.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-2/golf_p361_006.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p361_008 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/gt_p361_008.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/golf-v1_p361_008.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/golf-frame_p361_008.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/golf-frame-eval-sample_p361_008.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-3/golf_p361_008.wav" type="audio/wav">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p361_011 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-4/gt_p361_011.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-4/golf-v1_p361_011.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-4/golf-frame_p361_011.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-4/golf-frame-eval-sample_p361_011.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-4/golf_p361_011.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p361_024 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-5/gt_p361_024.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-5/golf-v1_p361_024.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-5/golf-frame_p361_024.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-5/golf-frame-eval-sample_p361_024.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/female/sample-5/golf_p361_024.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="passage">p360_003 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/gt_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/golf-v1_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/golf-frame_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/golf-frame-eval-sample_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-1/golf_p360_003.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p360_005 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/gt_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/golf-v1_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/golf-frame_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/golf-frame-eval-sample_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-2/golf_p360_005.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p360_007 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/gt_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/golf-v1_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/golf-frame_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/golf-frame-eval-sample_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-3/golf_p360_007.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p360_009 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/gt_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/golf-v1_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/golf-frame_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/golf-frame-eval-sample_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-4/golf_p360_009.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="passage">p360_019 </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/gt_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/golf-v1_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/golf-frame_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/golf-frame-eval-sample_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls="controls" class="player" preload="metadata">
+                            <source src="audio/male/sample-5/golf_p360_019.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+            </table>
         </div>
 
 
